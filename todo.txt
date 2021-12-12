@@ -1,0 +1,4 @@
+Project will consist of 3 parts.
+First ios the logic which will be a simple caesar cypher which will take 2 inputs -Input string and number of shift for encrytion and decrytion to break it.
+Second will be server which will call the right logic.
+Third will be to create a simple web page with 2 tabs. One for decryption and second with encrytion
