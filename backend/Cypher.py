@@ -26,8 +26,3 @@ class Cypher:
                 original_text = original_text + chr((ord(char) - shift - 97) % 26 + 97)
                       
         return original_text
-
-
-cyp=Cypher()
-res=cyp.decrypt("Pzhm Gmn",5)
-print(res)

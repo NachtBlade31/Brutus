@@ -1,10 +1,25 @@
 import React from "react";
-import Navbar from "./Component/Navbar/Navbar";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate
+} from "react-router-dom";
+import Home from "./Pages/Home";
+import Encrypt from "./Pages/Encrypt";
+import Decrypt from "./Pages/Decrypt";
 
 const App = () => {
   return (
     <div className="App">
-      <Navbar />
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/encrypt" element={<Encrypt />} />
+          <Route path="/decrypt" element={<Decrypt />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </Router>
     </div>
   );
 };
