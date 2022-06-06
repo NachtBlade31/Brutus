@@ -11,7 +11,7 @@ def encrypt():
     message = request.json["message"]
     cyp=Cypher()
     data=  {'result':cyp.encrypt(message,shift)}   
-    return cyp.encrypt(data)
+    return jsonify(data)
     
 @app.route("/decrypt",methods = ['POST'])
 def decrypt():
