@@ -1,0 +1,31 @@
+This files deals with the step of starting the project
+
+The Brutus Application is a 2 tier application , server and frontend whoch needs to be started seprately.
+
+First we will look into starting the server.
+
+In order for the server to run we need pip to install 2 applications. 
+
+https://pip.pypa.io/en/stable/installation/
+
+After the pip is installed on system
+
+Use the following command in Directory Path Brutus\backend\
+
+pip install flask  
+pip install -U flask-cors
+
+To change Directory you can use cd C:\Users\Project\Brutus\backend
+
+Once the requirements are installed and the directory is Brutus\backend
+
+run the server with python server.py and the server will start on port 5000
+
+For Starting the Frontend , you will need to install node and npm .
+https://nodejs.org/en/
+
+Once the node and npm is installed , navigate to Brutus/frontend and use the following commands
+To install Node Modules, use npm install
+Once Done , to start the frontend just type npm start to run the frontend
+
+Once both the server and Frontend starts running , the UI can be accessed on localhost:3000
